@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customer_faqs",
+  "info": {
+    "name": "CustomerFAQ"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "question": {
+      "type": "component",
+      "repeatable": false,
+      "component": "i18n.translatable-rtf"
+    },
+    "answer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "i18n.translatable-rtf"
+    },
+    "key": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "features",
+  "info": {
+    "name": "Features"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "i18n.translatable-rtf"
+    },
+    "description": {
+      "type": "component",
+      "repeatable": false,
+      "component": "i18n.translatable-rtf"
+    },
+    "illustration": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "videos",
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "hero",
+        "card",
+        "table"
+      ]
+    },
+    "badge": {
+      "type": "component",
+      "repeatable": false,
+      "component": "i18n.translatable"
+    },
+    "transform": {
+      "type": "string",
+      "default": "none"
+    },
+    "colors": {
+      "type": "component",
+      "repeatable": false,
+      "component": "design.theme"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "key": {
+      "type": "string"
+    },
+    "icon_key": {
+      "type": "string"
+    }
+  }
+}

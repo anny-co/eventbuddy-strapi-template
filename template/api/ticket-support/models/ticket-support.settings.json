@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "ticket_supports",
+  "info": {
+    "name": "Ticket-Support"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "illustration": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

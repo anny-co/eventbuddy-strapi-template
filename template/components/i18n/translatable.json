@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_i18n_translatables",
+  "info": {
+    "name": "Translatable",
+    "icon": "globe"
+  },
+  "options": {},
+  "attributes": {
+    "de": {
+      "type": "text"
+    },
+    "en": {
+      "type": "text"
+    }
+  }
+}

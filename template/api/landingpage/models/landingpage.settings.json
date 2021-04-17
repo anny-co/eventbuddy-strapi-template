@@ -1,0 +1,62 @@
+{
+  "kind": "singleType",
+  "collectionName": "landingpages",
+  "info": {
+    "name": "landingpage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "partners": {
+      "collection": "partners"
+    },
+    "feature_sections": {
+      "collection": "feature-sections"
+    },
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "i18n.translatable"
+    },
+    "description": {
+      "type": "component",
+      "repeatable": false,
+      "component": "i18n.translatable"
+    },
+    "illustration": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "features_title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "i18n.translatable"
+    },
+    "features_description": {
+      "type": "component",
+      "repeatable": false,
+      "component": "i18n.translatable"
+    },
+    "partners_title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "i18n.translatable"
+    },
+    "partners_description": {
+      "type": "component",
+      "repeatable": false,
+      "component": "i18n.translatable"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ticket-support",
+      "handler": "ticket-support.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ticket-support",
+      "handler": "ticket-support.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ticket-support",
+      "handler": "ticket-support.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

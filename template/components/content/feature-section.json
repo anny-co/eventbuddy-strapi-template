@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_content_feature_sections",
+  "info": {
+    "name": "FeatureSection",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "hero": {
+      "model": "feature"
+    },
+    "cards": {
+      "collection": "feature"
+    },
+    "items": {
+      "collection": "feature"
+    },
+    "key": {
+      "type": "string"
+    },
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "i18n.translatable-rtf"
+    },
+    "description": {
+      "type": "component",
+      "repeatable": false,
+      "component": "i18n.translatable-rtf"
+    },
+    "illustration": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_design_themes",
+  "info": {
+    "name": "Theme",
+    "icon": "fill-drip"
+  },
+  "options": {},
+  "attributes": {
+    "color": {
+      "type": "string",
+      "default": "#fefefe"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "var(--text-primary-color)"
+    },
+    "accent": {
+      "type": "string",
+      "default": "var(--primary-color)"
+    }
+  }
+}

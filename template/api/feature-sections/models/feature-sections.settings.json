@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "feature_sections",
+  "info": {
+    "name": "FeatureSections"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "key": {
+      "type": "string"
+    },
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "i18n.translatable-rtf"
+    },
+    "description": {
+      "type": "component",
+      "repeatable": false,
+      "component": "i18n.translatable-rtf"
+    },
+    "illustration": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "hero": {
+      "model": "feature"
+    },
+    "cards": {
+      "collection": "feature"
+    },
+    "tables": {
+      "collection": "feature"
+    },
+    "heroTheme": {
+      "type": "component",
+      "repeatable": false,
+      "component": "design.theme"
+    },
+    "cardsTheme": {
+      "type": "component",
+      "repeatable": false,
+      "component": "design.theme"
+    },
+    "tablesTheme": {
+      "type": "component",
+      "repeatable": false,
+      "component": "design.theme"
+    },
+    "sectionTheme": {
+      "type": "component",
+      "repeatable": false,
+      "component": "design.theme"
+    }
+  }
+}
